@@ -97,6 +97,7 @@
 		A0D61AA81D403FEE002951BF /* Delegates Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				A0D61AD71D4045EC002951BF /* My Delegates */,
 				A0D61AA91D403FEE002951BF /* AppDelegate.swift */,
 				A0D61AAB1D403FEE002951BF /* ViewController.swift */,
 				A0D61AAD1D403FEE002951BF /* Main.storyboard */,
@@ -123,6 +124,13 @@
 				A0D61ACB1D403FEE002951BF /* Info.plist */,
 			);
 			path = "Delegates ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		A0D61AD71D4045EC002951BF /* My Delegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "My Delegates";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
