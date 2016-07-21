@@ -8,14 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBOutlet weak var textField1: UITextField!
+    @IBOutlet weak var textField3: UITextField!
+    @IBOutlet weak var switch1: UISwitch!
     
     let zipCodeDelegate = ZipCodeDelegate()
     override func viewDidLoad() {
         self.textField1.delegate = zipCodeDelegate
+        self.textField3.delegate = self
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -24,7 +27,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        if switch1.on{
+            return true
+        }
+            return false
+    }
 
 }
 

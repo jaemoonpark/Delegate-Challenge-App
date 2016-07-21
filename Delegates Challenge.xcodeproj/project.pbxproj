@@ -15,6 +15,7 @@
 		A0D61ABF1D403FEE002951BF /* Delegates_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D61ABE1D403FEE002951BF /* Delegates_ChallengeTests.swift */; };
 		A0D61ACA1D403FEE002951BF /* Delegates_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D61AC91D403FEE002951BF /* Delegates_ChallengeUITests.swift */; };
 		A0D61AD91D404698002951BF /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D61AD81D404698002951BF /* ZipCodeDelegate.swift */; };
+		A0D61ADB1D405788002951BF /* CashTextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D61ADA1D405788002951BF /* CashTextDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A0D61AC91D403FEE002951BF /* Delegates_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates_ChallengeUITests.swift; sourceTree = "<group>"; };
 		A0D61ACB1D403FEE002951BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0D61AD81D404698002951BF /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
+		A0D61ADA1D405788002951BF /* CashTextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				A0D61AD81D404698002951BF /* ZipCodeDelegate.swift */,
+				A0D61ADA1D405788002951BF /* CashTextDelegate.swift */,
 			);
 			name = "My Delegates";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D61ADB1D405788002951BF /* CashTextDelegate.swift in Sources */,
 				A0D61AAC1D403FEE002951BF /* ViewController.swift in Sources */,
 				A0D61AD91D404698002951BF /* ZipCodeDelegate.swift in Sources */,
 				A0D61AAA1D403FEE002951BF /* AppDelegate.swift in Sources */,
