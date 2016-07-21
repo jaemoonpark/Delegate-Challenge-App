@@ -11,8 +11,13 @@ import UIKit
 
 class CashTextDelegate: NSObject, UITextFieldDelegate {
     //initial $0.00 without sacraficing placeholder
-    var multiplier = 0
     var total = 0
+    let currencyFormat = NSNumberFormatter()
+    
+    override init(){
+        currencyFormat.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+    }
+    
     func textFieldDidBeginEditing(textField: UITextField) {
         if(textField.text == "")
         {
@@ -30,18 +35,25 @@ class CashTextDelegate: NSObject, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         let checkString = Int(string)
-        if checkString == nil && (string != ""){
-            return false
+        if(string == ""){
+            total /= 10
+            //return true because we want characters removed
+            return true
         }
-        
-        if(string == "" && multiplier > 0){
-            multiplier -= 1
+        else if (checkString != nil)
+        {
+            //by default returns false for this case because the text automatically handles adding in digits
+            total *= 10
+            total += Int(string)!
+            //implemented this conditional to prevent overflow glitch
+            if(currencyFormat.stringFromNumber(Double(total) / 100.0)?.characters.count > 21){
+                total = 0
+                textField.text = currencyFormat.stringFromNumber(0)
+            }
+            else{
+            textField.text = currencyFormat.stringFromNumber(Double(total) / 100.0)
+            }
         }
-        else if (string != ""){
-            multiplier += 1
-        }
-        
-        print(multiplier)
-        return true
+        return false
     }
 }
