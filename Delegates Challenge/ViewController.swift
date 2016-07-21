@@ -12,12 +12,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBOutlet weak var textField1: UITextField!
+    @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
     @IBOutlet weak var switch1: UISwitch!
     
     let zipCodeDelegate = ZipCodeDelegate()
+    let cashTextDelegate = CashTextDelegate()
     override func viewDidLoad() {
         self.textField1.delegate = zipCodeDelegate
+        self.textField2.delegate = cashTextDelegate
         self.textField3.delegate = self
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

@@ -26,7 +26,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rT-mW-y6M">
                                 <rect key="frame" x="20" y="128" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ovq-g0-8KE">
                                 <rect key="frame" x="20" y="166" width="322" height="30"/>
@@ -56,6 +56,7 @@
                     <connections>
                         <outlet property="switch1" destination="d8S-Kr-fH5" id="fyQ-kH-iGD"/>
                         <outlet property="textField1" destination="n71-y1-2Sj" id="DUe-Sp-HN1"/>
+                        <outlet property="textField2" destination="6rT-mW-y6M" id="1DI-lm-uvM"/>
                         <outlet property="textField3" destination="ovq-g0-8KE" id="WSt-yp-oyJ"/>
                     </connections>
                 </viewController>
